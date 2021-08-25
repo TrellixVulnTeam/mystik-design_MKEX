@@ -1,14 +1,48 @@
 .Sobre__Mi {
+    width: 100vw;
+    padding: 100px 0 0 0;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
-    .Sobre__Mi__Img {
-        width: 400px;
-        height: auto;
-        img {
-            width: 100%;
-            height: auto;
+    justify-content: center;
+    .Sobre__Mi__1 {
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        .Sobre__Mi__1__Texto {
+            width: 500px;
+            .Sobre__Mi__1__Texto__Titulo{
+                background: $color_botones;
+                border-radius: 15px;
+                h2 {
+                    color: #ffffff;
+                    text-align: center;
+                }
+            }
+        }
+        .Sobre__Mi__1__Img {
+            width: 500px;
+            img {
+                width: 500px;
+            };
+        }
+    }
+    .Sobre__Mi__2 {
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        .Sobre__Mi__2__Img {
+            width: 500px;
+            img {
+                width: 500px;
+            };
+        }
+        .Sobre__Mi__2__Texto {
+            width: 500px;
         }
     }
 }
