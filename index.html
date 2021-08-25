@@ -44,11 +44,13 @@
         </nav>
         <!-- Titulo a la izquierza, telegono flotante a la derecha -->
         <section class="Header__Hero">
-            <div>
-                <h1>Mystik Designed</h1>
+            <div class="Header__Hero__Titulo">
+                <h1>Un buen diseño<br> 
+                    es un buen <br>
+                    negocio."</h1>
             </div>
-            <div>
-                <img src="" alt="foto del telefono flotante">
+            <div class="Header__Hero__Imagen">
+                <img src="Imagenes/telefono-flotante.png" alt="foto del telefono flotante">
             </div>
         </section>
         <!-- En la parte inferior de la pantalla al medio flecha hacia abajo con incicación -->
@@ -56,7 +58,7 @@
             <p>
                 Click para continuar
             </p>
-            <a href="Imagenes/flecha.png"><img src="" alt="flecha-para-abajo"></a>
+            <a href="Imagenes/flecha.png"><img src="Imagenes/flecha.png" alt="flecha-para-abajo"></a>
         </div>
     </section>    
     </header>
@@ -157,24 +159,32 @@
     <!-- Formulario -->
 
     <section class="Formulario" id="escribime">
-        <div class="Contacto__Titulo">
+        <div class="Formulario__Titulo">
             <h4>Contacto</h4>
         </div>
-        <div>
-            <form action=""></form>
+        <div class="Formulario__Rellenar">
+            <form id="userform" action="" method="POST" autocomplete="on">
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre Completo" required/><br />
+                <input type="email" id="mail" name="Mail" placeholder="Email" required><br />
+                <input type="asunto" id="asunto" name="asunto" placeholder="Asunto" required><br />
+                <textarea name="Mensaje" placeholder="Escribinos tu consulta"></textarea><br />
+                <input type="submit" value="Enviar">
+            </form>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <div class="Footer_Logo">
+        <div class="Footer__Logo">
             <img src="Imagenes/logo-footer.png" alt="">
         </div>
-        <div class="Footer_Redes">
+        <div class="Footer__Redes">
             <a href=""><img src="Imagenes/logo-footer-instagram.png" alt="Instagram"></a>
             <a href=""><img src="Imagenes/logo-footer-linkedin.png" alt="Linkedin"></a>
             <a href=""><img src="Imagenes/logo-footer-pinterest.png" alt="Pinteres"></a>
         </div>
-            
+    </footer>
+    
+    <script src="js/index.js"></script>
 </body>
 </html>
