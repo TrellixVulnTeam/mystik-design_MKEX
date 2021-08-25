@@ -8,13 +8,21 @@
     <meta name="description" content="descripcion para google" />
     <meta name="keywords" content="example,aexample">
     <title>Mystik Designed</title>
+    <link rel="shortcut icon" href="imagenes/favicon/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Header -->
+    <!-- Hero -->
     <header>
         <!-- Barra de navegación, debe estar fija en el scroll -->
         <nav>
+            <div class="Nav__Logo">
+            <img src="imagenes/logo.png" alt="logo">
+            </div>
+            <div class="Nav__Menu">
             <ul>
                 <li>
                     <a href="#home">Home</a>
@@ -29,29 +37,33 @@
                     <a href="#proyectos">proyectos</a>
                 </li>
                 <li>
-                    <a href="#Escribime">¡Escribime!</a>
+                    <a href="#escribime">¡Escribime!</a>
                 </li>
             </ul>
+        </div>
         </nav>
         <!-- Titulo a la izquierza, telegono flotante a la derecha -->
-        <div>
+        <section class="Header__Hero">
             <div>
                 <h1>Mystik Designed</h1>
             </div>
             <div>
                 <img src="" alt="foto del telefono flotante">
             </div>
-        </div>
+        </section>
         <!-- En la parte inferior de la pantalla al medio flecha hacia abajo con incicación -->
-        <div>
+        <div class="Header__Siguiente">
             <p>
                 Click para continuar
             </p>
-            <img src="" alt="flecha-para-abajo">
+            <a href="Imagenes/flecha.png"><img src="" alt="flecha-para-abajo"></a>
         </div>
+    </section>    
     </header>
-    <!-- Contenido -->
-    <section>
+
+    <!-- Sobre mi -->
+
+    <section class="Sobre__Mi" id="sobre-mi">
         <article>
             <h2>¿Quién está destrás de Mystik?</h2>
             <p>
@@ -85,7 +97,8 @@
     </section>
 
     <!-- Servicios -->
-    <section>
+
+    <section class="servicios" id="servicio">
         <div class="Servicios__Titulo">
             <h4>Solucioná tus problemas</h4>
         </div>
@@ -110,6 +123,58 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere placeat sint culpa ea a nobis obcaecati debitis.
             </p>
         </article>
-    </section>    
+    </section>
+
+    <!-- Proyectos -->
+
+    <section class="Proyectos" id="proyectos">
+        <div class="Proyectos__Titulo">
+            <h4>Proyectos</h4>
+        </div>
+        <article class="Proyectos__Bloque">
+            <img src="" alt="">
+            <h4>Mystik Multimedia Design</h4>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere placeat sint culpa ea a nobis obcaecati debitis.
+            </p>
+        </article>
+        <article class="Proyectos__Bloque">
+            <img src="" alt="">
+            <h4>Mystik Multimedia Design</h4>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere placeat sint culpa ea a nobis obcaecati debitis.
+            </p>
+        </article>
+        <article class="Proyectos__Bloque">
+            <img src="" alt="">
+            <h4>Mystik Multimedia Design</h4>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere placeat sint culpa ea a nobis obcaecati debitis.
+            </p>
+        </article>
+    </section>
+
+    <!-- Formulario -->
+
+    <section class="Formulario" id="escribime">
+        <div class="Contacto__Titulo">
+            <h4>Contacto</h4>
+        </div>
+        <div>
+            <form action=""></form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="Footer_Logo">
+            <img src="Imagenes/logo-footer.png" alt="">
+        </div>
+        <div class="Footer_Redes">
+            <a href=""><img src="Imagenes/logo-footer-instagram.png" alt="Instagram"></a>
+            <a href=""><img src="Imagenes/logo-footer-linkedin.png" alt="Linkedin"></a>
+            <a href=""><img src="Imagenes/logo-footer-pinterest.png" alt="Pinteres"></a>
+        </div>
+            
 </body>
 </html>
