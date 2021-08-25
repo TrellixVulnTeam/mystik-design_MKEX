@@ -1,0 +1,14 @@
+.Sobre__Mi {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    .Sobre__Mi__Img {
+        width: 400px;
+        height: auto;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
