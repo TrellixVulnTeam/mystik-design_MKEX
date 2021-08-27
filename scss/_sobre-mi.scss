@@ -1,5 +1,6 @@
 .Sobre__Mi {
     width: 98vw;
+    height: 150vh;
     padding: 100px 0 0 0;
     display: flex;
     flex-direction: column;
@@ -13,6 +14,7 @@
         justify-content: space-evenly;
         .Sobre__Mi__1__Texto {
             width: 500px;
+            margin-bottom: 100px;
             .Sobre__Mi__1__Texto__Titulo{
                 background: $color_botones;
                 border-radius: 15px;
@@ -20,6 +22,11 @@
                     color: #ffffff;
                     text-align: center;
                 }
+            }
+            p {
+                font-weight: 600;
+                font-size: 1.5em;
+                text-align: justify;
             }
         }
         .Sobre__Mi__1__Img {
@@ -29,20 +36,27 @@
             };
         }
     }
-    .Sobre__Mi__2 {
-        width: 97vw;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-evenly;
-        .Sobre__Mi__2__Img {
+}
+.Sobre__Mi__2 {
+    width: 97vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    .Sobre__Mi__2__Img {
+        width: 500px;
+        img {
             width: 500px;
-            img {
-                width: 500px;
-            };
-        }
-        .Sobre__Mi__2__Texto {
-            width: 500px;
+        };
+    }
+    .Sobre__Mi__2__Texto {
+        width: 500px;
+        p {
+            font-family: 'Nunito', sans-serif;
+            font-weight: 600;
+            font-size: 1.5em;
+            text-align: justify;
         }
     }
-}
+}    
