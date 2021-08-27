@@ -165,17 +165,19 @@
 
     <section class="Formulario" id="escribime">
         <div class="Formulario__Titulo">
-            <h4>Escribime!!</h4>
+            <h4>¡Escribime!</h4>
         </div>
-        <div class="Formulario__Rellenar">
-            <form id="userform" action="" method="POST" autocomplete="on">
-                <input type="text" id="nombre" name="nombre" placeholder="Nombre Completo" required/><br />
-                <input type="email" id="mail" name="Mail" placeholder="Email" required><br />
-                <input type="asunto" id="asunto" name="asunto" placeholder="Asunto" required><br />
-                <textarea name="Mensaje" placeholder="Escribinos tu consulta"></textarea><br />
-                <input type="submit" value="Enviar">
-            </form>
-        </div>
+        <form id="userform" action="" method="POST" autocomplete="on" class="Formulario__Rellenar">
+            <div class="Formulario__Datos">
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre Completo" class="Formulario__Input" required/>
+                <input type="email" id="mail" name="Mail" placeholder="Email" class="Formulario__Input" required>
+                <input type="asunto" id="asunto" name="asunto" placeholder="Asunto" class="Formulario__Input" required>
+            </div>
+            <div class="Formulario__Mensaje">
+                <textarea name="Mensaje" placeholder="Escribinos tu consulta" class="Formulario__Mensaje__Area"></textarea>
+            </div>
+        </form>
+        <button type="submit" value="Enviar" class="Formulario__EnviarBtn">Enviar</button>
     </section>
 
     <!-- Footer -->

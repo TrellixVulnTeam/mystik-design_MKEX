@@ -1,1 +1,251 @@
-html{font-family:'Nunito', sans-serif;font-size:10px;background-color:#E5E5E5}body{margin:0%;padding:0%}h1{font-size:4em;font-style:normal;font-weight:600;line-height:2em;letter-spacing:0em;text-align:left}h2{font-size:3em;font-style:normal;font-weight:600;line-height:1.8em;letter-spacing:0em;text-align:left}h3{font-size:2.5em;font-style:normal;font-weight:600;line-height:1.5em;letter-spacing:0em;text-align:left}h4{font-size:2em;font-style:normal;font-weight:600;line-height:1.25em;letter-spacing:0em;text-align:left}h5{font-size:1.75em;font-style:normal;font-weight:600;line-height:1em;letter-spacing:0em;text-align:left}h6{font-size:1.5em;font-style:normal;font-weight:600;line-height:1em;letter-spacing:0em;text-align:left}p{font-size:1.3em;font-style:normal;font-weight:500;line-height:2em;letter-spacing:0em;text-align:left}nav{width:80vw;background:#FFFFFF;height:12vh;box-shadow:0px 2px 14px 0px #CACACA80;border-radius:20px;display:flex;justify-content:space-between;padding:0 75px;align-items:center;margin-top:20px;position:fixed;z-index:10}nav .Nav__Logo img{width:160px}nav ul{list-style:none;margin:0;padding:0;position:relative}nav ul li{display:inline-block;position:relative}nav ul li a{color:#3C3C3B;text-decoration:none;font-size:1.2em;font-weight:bold;text-transform:uppercase;padding:0.5em 1em;border-radius:5px;transition:background-color 0.3s ease-in-out}nav ul li a:hover{background-color:#6EC5CE;color:#ffffff}header{height:100vh;display:flex;flex-direction:column;align-items:center;background-image:url(../imagenes/header.png);background-size:100vw;background-position:top;background-repeat:no-repeat;background-position-y:-100px}header .Header__Hero{width:100%;display:flex;flex-direction:row;align-items:center;justify-content:space-evenly;padding:100px 0}header .Header__Hero .Header__Hero__Titulo{font-family:'Junge', serif;font-size:1.2em;font-weight:400;font-style:normal;line-height:0px;color:#6EC5CE}header .Header__Hero .Header__Hero__Imagen img{width:450px}.Header__Hero__Siguiente{margin-top:-200px;display:flex;flex-direction:column;align-items:center;justify-content:center}.Header__Hero__Siguiente p{text-align:center;font-size:2em;color:#6EC5CE;font-weight:600;line-height:0px}.Header__Hero__Siguiente a img{width:30px}.Sobre__Mi{width:98vw;padding:100px 0 0 0;display:flex;flex-direction:column;align-items:center;justify-content:center}.Sobre__Mi .Sobre__Mi__1{width:97vw;display:flex;flex-direction:row;align-items:center;justify-content:space-evenly}.Sobre__Mi .Sobre__Mi__1 .Sobre__Mi__1__Texto{width:500px}.Sobre__Mi .Sobre__Mi__1 .Sobre__Mi__1__Texto .Sobre__Mi__1__Texto__Titulo{background:linear-gradient(180deg, #FDDDB4 0%, #F7C482 85.82%);border-radius:15px}.Sobre__Mi .Sobre__Mi__1 .Sobre__Mi__1__Texto .Sobre__Mi__1__Texto__Titulo h2{color:#ffffff;text-align:center}.Sobre__Mi .Sobre__Mi__1 .Sobre__Mi__1__Img{width:500px}.Sobre__Mi .Sobre__Mi__1 .Sobre__Mi__1__Img img{width:500px}.Sobre__Mi .Sobre__Mi__2{width:97vw;display:flex;flex-direction:row;align-items:center;justify-content:space-evenly}.Sobre__Mi .Sobre__Mi__2 .Sobre__Mi__2__Img{width:500px}.Sobre__Mi .Sobre__Mi__2 .Sobre__Mi__2__Img img{width:500px}.Sobre__Mi .Sobre__Mi__2 .Sobre__Mi__2__Texto{width:500px}footer{background-color:#64C3D1;height:10vh;display:flex;justify-content:space-around;align-items:center;padding:5px}footer .Footer__Logo img{width:50px;height:50px}footer .Footer__Redes a{padding:0 10px}footer .Footer__Redes a img{width:30px}
+html {
+  font-family: 'Nunito', sans-serif;
+  font-size: 10px;
+  background-color: #E5E5E5;
+  scroll-behavior: smooth; }
+
+body {
+  margin: 0%;
+  padding: 0%; }
+
+/*Mixins a utilizar en caso de ser necesario*/
+/*Paleta de colores*/
+h1 {
+  font-size: 4em;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2em;
+  letter-spacing: 0em;
+  text-align: left; }
+
+h2 {
+  font-size: 3em;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.8em;
+  letter-spacing: 0em;
+  text-align: left; }
+
+h3 {
+  font-size: 2.5em;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.5em;
+  letter-spacing: 0em;
+  text-align: left; }
+
+h4 {
+  font-size: 2em;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.25em;
+  letter-spacing: 0em;
+  text-align: left; }
+
+h5 {
+  font-size: 1.75em;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1em;
+  letter-spacing: 0em;
+  text-align: left; }
+
+h6 {
+  font-size: 1.5em;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1em;
+  letter-spacing: 0em;
+  text-align: left; }
+
+p {
+  font-size: 1.3em;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2em;
+  letter-spacing: 0em;
+  text-align: left; }
+
+/*Nav*/
+nav {
+  width: 80vw;
+  background: #FFFFFF;
+  height: 12vh;
+  box-shadow: 0px 2px 14px 0px #CACACA80;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 75px;
+  align-items: center;
+  margin-top: 20px;
+  position: fixed;
+  z-index: 10; }
+  nav .Nav__Logo img {
+    width: 160px; }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative; }
+    nav ul li {
+      display: inline-block;
+      position: relative; }
+      nav ul li a {
+        color: #3C3C3B;
+        text-decoration: none;
+        font-size: 1.2em;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 0.5em 1em;
+        border-radius: 5px;
+        transition: background-color 0.3s ease-in-out; }
+        nav ul li a:hover {
+          background-color: #6EC5CE;
+          color: #ffffff; }
+
+header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../imagenes/header.png);
+  background-size: 100vw;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-position-y: -100px; }
+  header .Header__Hero {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 100px 0; }
+    header .Header__Hero .Header__Hero__Titulo {
+      font-family: 'Junge', serif;
+      font-size: 1.2em;
+      font-weight: 400;
+      font-style: normal;
+      line-height: 0px;
+      color: #6EC5CE; }
+    header .Header__Hero .Header__Hero__Imagen img {
+      width: 450px; }
+
+.Header__Hero__Siguiente {
+  margin-top: -200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .Header__Hero__Siguiente p {
+    text-align: center;
+    font-size: 2em;
+    color: #6EC5CE;
+    font-weight: 600;
+    line-height: 0px; }
+  .Header__Hero__Siguiente a img {
+    width: 30px; }
+
+.Sobre__Mi {
+  width: 98vw;
+  padding: 100px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .Sobre__Mi .Sobre__Mi__1 {
+    width: 97vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly; }
+    .Sobre__Mi .Sobre__Mi__1 .Sobre__Mi__1__Texto {
+      width: 500px; }
+      .Sobre__Mi .Sobre__Mi__1 .Sobre__Mi__1__Texto .Sobre__Mi__1__Texto__Titulo {
+        background: linear-gradient(180deg, #FDDDB4 0%, #F7C482 85.82%);
+        border-radius: 15px; }
+        .Sobre__Mi .Sobre__Mi__1 .Sobre__Mi__1__Texto .Sobre__Mi__1__Texto__Titulo h2 {
+          color: #ffffff;
+          text-align: center; }
+    .Sobre__Mi .Sobre__Mi__1 .Sobre__Mi__1__Img {
+      width: 500px; }
+      .Sobre__Mi .Sobre__Mi__1 .Sobre__Mi__1__Img img {
+        width: 500px; }
+  .Sobre__Mi .Sobre__Mi__2 {
+    width: 97vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly; }
+    .Sobre__Mi .Sobre__Mi__2 .Sobre__Mi__2__Img {
+      width: 500px; }
+      .Sobre__Mi .Sobre__Mi__2 .Sobre__Mi__2__Img img {
+        width: 500px; }
+    .Sobre__Mi .Sobre__Mi__2 .Sobre__Mi__2__Texto {
+      width: 500px; }
+
+.Formulario {
+  padding: 30px 150px; }
+  .Formulario .Formulario__Titulo {
+    width: 236px;
+    height: 57px;
+    background: linear-gradient(180deg, #FDDDB4 0%, #F7C482 85.82%);
+    border-radius: 50px; }
+    .Formulario .Formulario__Titulo h4 {
+      color: #ffffff;
+      text-align: center; }
+  .Formulario .Formulario__Rellenar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 30px 0 30px 0;
+    align-items: center; }
+    .Formulario .Formulario__Rellenar .Formulario__Datos {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      flex-basis: 100%;
+      flex: 1; }
+      .Formulario .Formulario__Rellenar .Formulario__Datos .Formulario__Input {
+        width: 80%;
+        min-width: 30rem;
+        height: 60px;
+        border-radius: 10px;
+        border: none;
+        margin: 1rem; }
+  .Formulario .Formulario__Mensaje {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1; }
+    .Formulario .Formulario__Mensaje .Formulario__Mensaje__Area {
+      width: 80%;
+      min-width: 30rem;
+      height: 230px;
+      border-radius: 11px;
+      border: none;
+      margin: 1rem; }
+  .Formulario .Formulario__EnviarBtn {
+    width: 178px;
+    height: 49px;
+    background: linear-gradient(180deg, #9FEAF5 0%, #64C3D1 85.82%);
+    border-radius: 50px;
+    border: none;
+    color: #ffffff;
+    text-align: center; }
+
+footer {
+  background-color: #64C3D1;
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px; }
+  footer .Footer__Logo img {
+    width: 50px;
+    height: 50px; }
+  footer .Footer__Redes a {
+    padding: 0 10px; }
+    footer .Footer__Redes a img {
+      width: 30px; }
