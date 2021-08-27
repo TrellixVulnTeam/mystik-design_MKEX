@@ -1,9 +1,51 @@
 .Servicios {
-    height: 200vh;
+    height: 130vh;
     background-image: url(../Imagenes/fondo-servicios.png);
     background-size: 100vw;
     background-repeat: no-repeat;
-    
+    margin-top: 100px;
+    margin-bottom: 100px;
+    .Servicios__Titulo {
+        margin: 0 50px 0 50px;
+        background: $color_botones;
+        background-size: auto;
+        margin: 0 400px 0 400px;
+        border-radius: 25px;
+        h3 {
+            color: white;
+            text-align: center;
+        }
+    }
+    .Servicios__Bloque {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 0 50px 0 50px;
+        .Servicios__Bloque__Item {
+            width: 30%;
+            height: 250px;
+            background-color: #ffffff;
+            border-radius: 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            box-shadow: 0px 0px 5px .5px black;
+            img {
+                text-align: center;
+                width: 150px;
+            }
+            h4 {
+                color: $color_botones;
+                text-align: center;
+                margin: 5px;
+            }
+            p {
+                color: #000000;
+                text-align: center;
+                margin: 25px;
+            }
+        }
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1200px) {}
