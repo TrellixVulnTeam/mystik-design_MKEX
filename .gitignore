@@ -1,0 +1,10 @@
+# Lista de archivos a ignorar por git
+
+# Ignora archivos del sistema Mac 
+.DS_store
+
+# ignorar todos los archivos que terminen en .json
+*.json
+
+# ignorar carpeta de node_modules
+/node_modules
