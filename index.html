@@ -8,6 +8,7 @@
     <meta name="description" content="Empresa dedicada a la creacioón de marcas personales, e-commerce y branding" />
     <meta name="keywords" content="example,aexample">
     <title>Mystik Designed</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="shortcut icon" href="imagenes/favicon/favicon.ico" type="image/x-icon">
     <!--Google Fonts Nunito y Junge-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -165,18 +166,22 @@
 
     <!-- Formulario -->
 
-    <section class="Formulario" id="escribime">
-        <div class="Formulario__Titulo">
-            <h4>Escribime!!!</h4>
+    <section class="Formulario row">
+        <div class="Formulario__Titulo col-lg-6 offset-lg-2">
+            <h4>¡Escribime!</h4>
         </div>
-        <div class="Formulario__Rellenar">
-            <form id="userform" action="" method="POST" autocomplete="on">
-                <input type="text" id="nombre" name="nombre" placeholder="Nombre Completo" required/><br />
-                <input type="email" id="mail" name="Mail" placeholder="Email" required><br />
-                <input type="asunto" id="asunto" name="asunto" placeholder="Asunto" required><br />
-                <textarea name="Mensaje" placeholder="Escribinos tu consulta"></textarea><br />
-                <input type="submit" value="Enviar">
-            </form>
+        <form id="userform" action="" method="POST" autocomplete="on" class="Formulario__Rellenar container row">
+            <div class="Formulario__Datos col-12 col-lg-6">
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre Completo" class="Formulario__Input" required/>
+                <input type="email" id="mail" name="Mail" placeholder="Email" class="Formulario__Input" required>
+                <input type="asunto" id="asunto" name="asunto" placeholder="Asunto" class="Formulario__Input" required>
+            </div>
+            <div class="Formulario__Mensaje col-12 col-lg-6">
+                <textarea name="Mensaje" placeholder="Escribinos tu consulta" class="Formulario__Mensaje__Area"></textarea>
+            </div>
+        </form>
+        <div class="Formulario__Btn col-lg-6 offset-lg-5">
+            <button type="submit" value="Enviar" class="Formulario__EnviarBtn">Enviar</button>
         </div>
     </section>
 
