@@ -65,4 +65,64 @@
 
 @media only screen and (min-width: 768px) and (max-width: 1200px) {}
 
-@media only screen and (min-width: 320px) and (max-width: 768px) {}
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    .Sobre__Mi {
+        width: 100vw;
+        height: 150vh;
+        padding: 0 0 0 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .Sobre__Mi__1 {
+            width: 100vw;
+            flex-direction: column;
+            .Sobre__Mi__1__Img {
+                width: 100vw;
+                img {
+                    width: 100vw;
+                }
+            }
+            .Sobre__Mi__1__Texto {
+                width: 100vw;
+                margin-bottom: 100px;
+                .Sobre__Mi__1__Texto__Titulo{
+                    background: $color_botones;
+                    border-radius: 15px;
+                    h2 {
+                        color: #ffffff;
+                        text-align: center;
+                    }
+                }
+                p {
+                    font-weight: 600;
+                    font-size: 1.5em;
+                    text-align: justify;
+                    line-height: 2.5em;
+                }
+            }
+        }
+        .Sobre__Mi__2 {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            .Sobre__Mi__2__Img {
+                width: 100vw;
+                img {
+                    width: 100vw;
+                }
+            }
+            .Sobre__Mi__2__Texto {
+                width: 100vw;
+                p {
+                    font-family: 'Nunito', sans-serif;
+                    font-weight: 600;
+                    font-size: 1.5em;
+                    text-align: justify;
+                    line-height: 2.5em;
+                }
+            }
+        }
+    }
+}
