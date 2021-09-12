@@ -1,7 +1,125 @@
 .Proyectos {
-    background-color: $color_principal;
+    margin: 0 50px 0 50px;
+
+    .Proyectos__Titulo{
+        margin: 30px 0 30px 0;
+        h2{
+            font-family: Nunito;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 4rem;
+            line-height: 4rem;
+            text-transform: uppercase;
+            color: $color_footer;
+            display:inline-block;
+        }
+        .Proyectos__Switch{
+            padding-left: 15rem;
+            display: flex;
+            flex-wrap: nowrap;
+            button{
+                width: 169px;
+                height: 49px;
+                background: $color_botones_2;
+                border-radius: 50px;
+                border:none;
+                text-align: center;
+                color: #ffffff;
+                font-size: 1.5rem;
+                font-family: Nunito;
+                font-style: normal;
+                font-weight: bold;
+                line-height: 34px;
+            }
+            .logofolioBtn{
+                z-index: 8;
+                transition-property: filter;
+                -o-transition-property: filter;
+                transition-duration: 0.1s;
+                padding-left:5rem;
+                text-align: left;
+                display: inline;
+            }
+            .redesBtn{
+                width: 229px;
+                filter: grayscale(100%);
+                -webkit-filter: grayscale(100%);
+                z-index: 7;
+                transform: translateX(-50px);
+                transition-property: filter;
+                -o-transition-property: filter;
+                transition-duration: 0.1s;
+                text-align: right;
+                padding-right:3rem;
+                display: inline;
+            }
+        }
+    }
+    .Proyectos__Contenedor{
+        margin: 30px 0 30px 0;
+        text-align:center;
+
+        .Proyectos__Bloque{
+            width: 283px;
+            height: 255px;
+            background: #FCFCFC;
+            box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.04);
+            border-radius: 12px;
+            display: inline-block;
+            text-align: center;
+            position: relative;
+            margin: 0.3rem;
+            position: relative;
+            img{
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 15%;
+                right: 0;
+                text-align: center;
+                filter: grayscale(100%);
+                -webkit-filter: grayscale(100%);
+            }
+            img:hover {
+                transition-property: filter;
+                -o-transition-property: filter;
+                transition-duration: 1s;
+                filter: none;
+                -webkit-filter: grayscale(0);
+                cursor:pointer;
+            }
+
+            img:hover + button {
+                opacity: 1.0;
+            }
+
+            button{
+                font-family: Nunito;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 15px;
+                align-items: center;
+                text-align: center;
+                color: #6EC3CD;
+                border:none;
+                background: none;
+                text-align: center;
+                position: relative;
+                top:218px;
+                opacity: 0.0;
+                -webkit-transition: all 500ms ease-in-out;
+                -moz-transition: all 500ms ease-in-out;
+                -ms-transition: all 500ms ease-in-out;
+                -o-transition: all 500ms ease-in-out;
+                transition: all 500ms ease-in-out;
+            }
+        }
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1200px) {}
 
 @media only screen and (min-width: 320px) and (max-width: 768px) {}
+
+
