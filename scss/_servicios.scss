@@ -1,6 +1,6 @@
 .Servicios {
     height: 130vh;
-    background-image: url(../Imagenes/fondo-servicios.png);
+    background-image: url(../imagenes/fondo-servicios.png);
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: 100px;
@@ -58,7 +58,7 @@
 @media only screen and (min-width: 320px) and (max-width: 767px) {
     .Servicios {
         height: default;
-        background-image: url(../Imagenes/fondo-servicios.png);
+        background-image: url(../imagenes/fondo-servicios.png);
         background-size: 100vw;
         background-repeat: no-repeat;
         margin-top: 100px;
