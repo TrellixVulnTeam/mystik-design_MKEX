@@ -26,6 +26,9 @@
         width: 100%;
         padding: 30px 80px 30px 80px;
         align-items:center;
+        @media (max-width: 992px) { 
+            padding: 30px 80px 30px 0px;
+        }
 
         .Formulario__Datos{
             text-align: right;
