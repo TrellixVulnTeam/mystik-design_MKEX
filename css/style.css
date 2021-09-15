@@ -81,7 +81,8 @@ p {
   z-index: 10; }
   .Nav .Nav__Container {
     padding: 1rem;
-    width: 80%; }
+    width: 80%;
+    text-align: center; }
     .Nav .Nav__Container .Nav__Toggler {
       border-color: none !important; }
     .Nav .Nav__Container #navbarSupportedContent {
@@ -92,6 +93,9 @@ p {
         margin-left: 20%;
         padding: 0;
         position: relative; }
+        @media only screen and (max-width: 1200px) {
+          .Nav .Nav__Container #navbarSupportedContent ul {
+            margin: 0; } }
         .Nav .Nav__Container #navbarSupportedContent ul li {
           display: inline-block;
           position: relative; }
