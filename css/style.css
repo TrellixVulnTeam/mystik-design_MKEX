@@ -69,55 +69,48 @@ p {
   text-align: left; }
 
 /*Nav*/
-nav {
-  width: 80vw;
-  background: #FFFFFF;
-  height: 12vh;
+.Nav {
+  width: 90%;
+  background-color: #FFFFFF !important;
   box-shadow: 0px 2px 14px 0px #CACACA80;
   border-radius: 20px;
   display: flex;
   justify-content: space-between;
-  padding: 0 75px;
   align-items: center;
   margin-top: 20px;
-  position: fixed;
   z-index: 10; }
-  nav .Nav__Logo img {
-    width: 160px; }
-  nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    position: relative; }
-    nav ul li {
-      display: inline-block;
-      position: relative; }
-      nav ul li a {
-        color: #3C3C3B;
-        text-decoration: none;
-        font-size: 1.2em;
-        font-weight: bold;
-        text-transform: uppercase;
-        padding: 0.5em 1em;
-        border-radius: 5px;
-        transition: background-color 0.3s ease-in-out; }
-        nav ul li a:hover {
-          background-color: #6EC5CE;
-          color: #ffffff; }
+  .Nav .Nav__Container {
+    padding: 1rem;
+    width: 80%; }
+    .Nav .Nav__Container .Nav__Toggler {
+      border-color: none !important; }
+    .Nav .Nav__Container #navbarSupportedContent {
+      background: #FFFFFF;
+      width: 80vw; }
+      .Nav .Nav__Container #navbarSupportedContent ul {
+        list-style: none;
+        margin-left: 20%;
+        padding: 0;
+        position: relative; }
+        .Nav .Nav__Container #navbarSupportedContent ul li {
+          display: inline-block;
+          position: relative; }
+          .Nav .Nav__Container #navbarSupportedContent ul li a {
+            color: #3C3C3B !important;
+            text-decoration: none;
+            font-size: 1.3rem;
+            line-height: 1.7rem;
+            font-weight: 600;
+            margin: 2rem;
+            padding: 0.5em 1em;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out; }
+            .Nav .Nav__Container #navbarSupportedContent ul li a:hover {
+              background-color: #6EC5CE;
+              color: #ffffff !important; }
 
 /*Tablet*/
 /*Telefono*/
-@media only screen and (min-width: 320px) and (max-width: 767px) {
-  nav {
-    width: 95vw;
-    height: 15vh;
-    flex-direction: column;
-    padding: 0 20px;
-    justify-content: center; }
-    nav ul {
-      display: flex;
-      flex-direction: row; } }
-
 header {
   height: 100%;
   display: flex;
@@ -569,7 +562,6 @@ header {
           text-align: left; } }
       .Formulario .Formulario__Rellenar .Formulario__Datos .Formulario__Input {
         width: 80%;
-        min-width: 30rem;
         height: 60px;
         border-radius: 10px;
         border: none;
@@ -583,7 +575,6 @@ header {
     text-align: left; }
     .Formulario .Formulario__Mensaje .Formulario__Mensaje__Area {
       width: 80%;
-      min-width: 30rem;
       height: 220px;
       border-radius: 11px;
       border: none;
