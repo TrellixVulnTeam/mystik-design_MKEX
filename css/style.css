@@ -84,7 +84,10 @@ p {
     width: 80%;
     text-align: center; }
     .Nav .Nav__Container .Nav__Toggler {
-      border-color: none !important; }
+      border: none; }
+      .Nav .Nav__Container .Nav__Toggler:focus {
+        outline: transparent;
+        box-shadow: none; }
     .Nav .Nav__Container #navbarSupportedContent {
       background: #FFFFFF;
       width: 80vw; }

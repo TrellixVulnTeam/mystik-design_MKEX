@@ -14,7 +14,11 @@
         width: 80%;
         text-align: center;
         .Nav__Toggler {
-            border-color: none !important;
+            border: none;
+            &:focus {
+                outline: transparent;
+                box-shadow: none;
+            }
         }
         #navbarSupportedContent{
             background: #FFFFFF;
