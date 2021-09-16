@@ -1,7 +1,7 @@
 .Sobre__Mi {
     width: 100%;
     height: 150vh;
-    padding: 100px 0 0 0;
+    padding: 150px 0 0 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,10 +16,8 @@
             width: 500px;
             margin-bottom: 100px;
             .Sobre__Mi__1__Texto__Titulo{
-                background: $color_botones;
-                border-radius: 15px;
                 h2 {
-                    color: #ffffff;
+                    color: #4B949C;                    ;
                     text-align: center;
                 }
             }
