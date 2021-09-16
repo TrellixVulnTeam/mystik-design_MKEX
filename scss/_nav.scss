@@ -9,7 +9,17 @@
     align-items: center;
     margin-top: 20px;
     z-index: 10;
+    height: 6rem;
+    @media only screen and (max-width: 1200px) {
+        height: auto;
+    }
     .Nav__Container {
+        .navbar-brand{
+            width: 10rem;
+            img{
+                width: 100%;
+            }
+        }
         padding: 1rem;
         width: 80%;
         text-align: center;
@@ -21,8 +31,11 @@
             }
         }
         #navbarSupportedContent{
+            height: 6rem;
             background: #FFFFFF;
-            width: 80vw;
+            @media only screen and (max-width: 1200px) {
+                height: auto;
+            }
             ul {
                 list-style: none;
                 margin-left: 20%;
@@ -30,6 +43,7 @@
                 position: relative;
                 @media only screen and (max-width: 1200px) {
                     margin:0;
+                    height: auto;
                 }
                 li {
                     display: inline-block;
@@ -44,9 +58,27 @@
                         padding: 0.5em 1em;
                         border-radius: 5px;
                         transition: background-color 0.3s ease-in-out;
+                        @media only screen and (max-width: 1200px) {
+                            font-size: 1.8rem;
+                        }
                         &:hover {
                             background-color: $color_principal;
                             color: #ffffff !important;
+                        }
+                    }
+                }
+                .Nav__Li__Redes{
+                    margin-top: 2rem;
+                    .Nav__Redes{
+                        display:none;
+                        @media only screen and (max-width: 1200px) {
+                            display: inline;
+                            margin: 0;
+                            width: 1rem;
+                            margin-top: 2rem;
+                        }
+                        img{
+                            width: 3rem;
                         }
                     }
                 }
