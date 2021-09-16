@@ -3,21 +3,19 @@
     background-image: url(../imagenes/fondo-servicios.png);
     background-size: cover;
     background-repeat: no-repeat;
-    margin-top: 100px;
-    margin-bottom: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     .Servicios__Titulo {
-        background: $color_botones;
-        background-size: auto;
-        border-radius: 25px;
-        padding: 0 50px 0 50px; 
         h3 {
-            font-size: 3rem;
-            color: white;
+            color: #4B949C;
             text-align: center;
+            font-size: 3.5rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 2rem;
+            letter-spacing: 0em;
         }
     }
     .Servicios__Bloque {
