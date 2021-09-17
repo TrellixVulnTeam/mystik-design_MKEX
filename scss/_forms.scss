@@ -1,14 +1,9 @@
 .Formulario {
     margin:0;
     padding: 4rem 4rem;
-    padding-top: 20rem;
-    background-image: url(../imagenes/fondo-formulario.png);
     align-items: center;
-    background-size: cover;
-    background-repeat: no-repeat;
     @media screen and (max-width: 768px) {
         padding: 4rem 1rem;
-        background-image: url(../imagenes/fondo-formulario-mobile.png);
     }
 
     .Formulario__Titulo{
@@ -16,7 +11,7 @@
         height: 57px;
         background: $color_botones;
         border-radius: 50px;
-        margin-top: 25rem;
+        margin-top: 5rem;
         text-align: right;
         
 
