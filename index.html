@@ -11,6 +11,8 @@
     <!--Link bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="shortcut icon" href="imagenes/favicon/favicon.ico" type="image/x-icon">
+    <!--Link Slick Swiper Slider Jquery-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <!--Google Fonts Nunito y Junge-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -65,7 +67,7 @@
                     </h1>
                 </div>
                 <div class="Header__Hero__Imagen">
-                    <img src="imagenes/telefono-flotante.webp" alt="foto del telefono flotante">
+                    <img src="imagenes/telefono-flotante.png alt="foto del telefono flotante">
                 </div>
             </section>
             <!-- En la parte inferior de la pantalla al medio flecha hacia abajo con incicación -->
@@ -73,7 +75,7 @@
                 <p>
                     Conocer más
                 </p>
-                <a href="#servicios"><img src="imagenes/flecha.svg" alt="flecha-para-abajo"></a>
+                <a href="#servicios"><img src="imagenes/flecha.png" alt="flecha-para-abajo"></a>
             </div>
         </section>    
         </header>
@@ -84,31 +86,65 @@
             <div class="Servicios__Titulo" id="servicios">
                 <h3>Solucioná tus problemas</h3>
             </div>
-            <section class="Servicios__Bloque">
-                <article class="Servicios__Bloque__Item">
-                    <img src="imagenes/servicios-imagen-de-prueba.png" alt="">
-                    <h4>Redes Sociales</h4>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus ante, fringilla vitae placerat vel, accumsan eu leo. 
-                    </p>
-                </article>   
-                <article class="Servicios__Bloque__Item">
-                    <img src="imagenes/servicios-imagen-de-prueba.png" alt="">
-                    <h4>Branding</h4>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere placeat sint culpa ea a nobis obcaecati debitis.
-                    </p>
-                </article>
-                <article class="Servicios__Bloque__Item"> 
-                    <img src="imagenes/servicios-imagen-de-prueba.png" alt="">
-                    <h4>E-commerce</h4>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere placeat sint culpa ea a nobis obcaecati debitis.
-                    </p>
-                </article>
-            </section>
+
+            <!-- Slider main container -->
+            <div class="swiper mySwiper swiper-initialized swiper-horizontal swiper-pointer-events">
+                <div class="swiper-wrapper" id="swiper-wrapper-46a2101fbce2e1a41" aria-live="polite" style="transition-duration: 0ms;">
+                    <div class="swiper-slide" role="group" aria-label="1 / 9" style="width: 739px;">                        
+                        <section class="Servicios__Bloque">
+                            <article class="Servicios__Bloque__Item">
+                                <img src="imagenes/servicios-imagen-de-prueba.png" alt="">
+                                <h4>Redes Sociales</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus ante, fringilla vitae placerat vel, accumsan eu leo. 
+                                </p>
+                            </article>   
+                            <article class="Servicios__Bloque__Item">
+                                <img src="imagenes/servicios-imagen-de-prueba.png" alt="">
+                                <h4>Branding</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere placeat sint culpa ea a nobis obcaecati debitis.
+                                </p>
+                            </article>
+                            <article class="Servicios__Bloque__Item"> 
+                                <img src="imagenes/servicios-imagen-de-prueba.png" alt="">
+                                <h4>E-commerce</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere placeat sint culpa ea a nobis obcaecati debitis.
+                                </p>
+                            </article>
+                        </section>
+                    </div>
+                    <div class="swiper-slide swiper-slide-prev" role="group" aria-label="5 / 9" style="width: 739px;">           
+                        <section class="Servicios__Bloque">
+                            <article class="Servicios__Bloque__Item">
+                                <img src="imagenes/servicios-imagen-de-prueba.png" alt="">
+                                <h4>Redes Sociales</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus ante, fringilla vitae placerat vel, accumsan eu leo. 
+                                </p>
+                            </article>   
+                            <article class="Servicios__Bloque__Item">
+                                <img src="imagenes/servicios-imagen-de-prueba.png" alt="">
+                                <h4>Branding</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere placeat sint culpa ea a nobis obcaecati debitis.
+                                </p>
+                            </article>
+                            <article class="Servicios__Bloque__Item"> 
+                                <img src="imagenes/servicios-imagen-de-prueba.png" alt="">
+                                <h4>E-commerce</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere placeat sint culpa ea a nobis obcaecati debitis.
+                                </p>
+                            </article>
+                        </section>
+                    </div>               
+                </div>
+                <div class="swiper-pagination swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span></div>
+                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+            </div>
         </div>
-    </div>
 
     <!-- Sobre mi -->
     <div class="Sobre__Mi" id="sobre-mi">
@@ -155,21 +191,46 @@
             </div>
         </div>
         <div class="Proyectos__Contenedor">
-            <article class="Proyectos__Bloque">
+            <div class="Proyectos__Bloque">
                 <img src="imagenes/logofolio/logo1.png"  alt="">
                 <button>Ver más ></button>
-            </article>
-            <article class="Proyectos__Bloque">
+            </div>
+            <div class="Proyectos__Bloque">
                 <img src="imagenes/logofolio/logo2.png" alt="">
                 <button>Ver más ></button>
-            </article>
-            <article class="Proyectos__Bloque">
+            </div>
+            <div class="Proyectos__Bloque">
                 <img src="imagenes/logofolio/logo3.png" class="achicar"  alt="">
                 <button>Ver más ></button>
-            </article>
-            <article class="Proyectos__Bloque">
+            </div>
+            <div class="Proyectos__Bloque">
                 <img src="imagenes/logofolio/logo4.png"  alt="">
                 <button>Ver más ></button>
+<<<<<<< HEAD
+            </div>
+            <div class="Proyectos__Bloque">
+                <img src="imagenes/logofolio/logo5.png" class="achicar" alt="">
+                <button>Ver más ></button>
+            </div>
+            <div class="Proyectos__Bloque">
+                <img src="imagenes/logofolio/logo6.png"  alt="">
+                <button>Ver más ></button>
+            </div>
+            <div class="Proyectos__Bloque">
+                <img src="imagenes/logofolio/logo7.png"  alt="">
+                <button>Ver más ></button>
+            </div>
+            <div class="Proyectos__Bloque">
+                <img src="imagenes/logofolio/logo8.png"  alt="">
+                <button>Ver más ></button>
+            </div>
+            <div class="Proyectos__Bloque">
+                <img src="imagenes/logofolio/logo9.png"  alt="">
+                <button>Ver más ></button>
+            </div>       
+            <div class="Proyectos__Bloque">
+                <img src="imagenes/logofolio/logo10.png" class="achicar" alt="">
+=======
             </article>
             <article class="Proyectos__Bloque">
                 <img src="imagenes/logofolio/logo5.webp" class="achicar" alt="">
@@ -193,8 +254,9 @@
             </article>       
             <article class="Proyectos__Bloque">
                 <img src="imagenes/logofolio/logo10.webp" class="achicar" alt="">
+>>>>>>> e0d5c7809fc8c9cc9f6bfc6db6858227e1ea37e6
                 <button>Ver más ></button>
-            </article>                    
+            </div>                    
         </div>
     </section>
 
@@ -234,9 +296,10 @@
     
     <!-- Scripts Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-
     <!-- Scripts Jquery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+     <!-- Scripts Slick Slider Carrousel Jquery-->
+     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- Scripts Personalizados -->
     <script src="js/index.js"></script>
 </body>
