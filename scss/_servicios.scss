@@ -37,9 +37,8 @@
                 display: flex;
                 flex-direction: row;
                 justify-content: space-around;
-                margin: 0 5% 0 5%;
                 .Servicios__Bloque__Item {
-                    width: 30%;
+                    width: 80%;
                     height: 400px;
                     background-color: #ffffff;
                     border-radius: 20px;
@@ -65,7 +64,11 @@
                 }
             }
           }
-        
+        .swiper-pagination{
+            @media only screen and (max-width: 768px){
+                bottom: -4px;
+            }
+        }
       }
     
 }
@@ -110,6 +113,7 @@
                 flex-direction: column;
                 justify-content: center;
                 margin-bottom: 20px;
+
                 img {
                     text-align: center;
                     width: 150px;
