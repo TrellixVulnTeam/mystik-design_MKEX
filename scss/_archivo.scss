@@ -1,5 +1,26 @@
 .Archivo__Descargar {
+    height: 12vh;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    background: url(../imagenes/fondo-descargas.png) no-repeat center center;
+    margin-top: 50px;
+    h3 {
+        color: #4B949C;
+        font-size: 3.0rem;
+    }
+    button {
+        height: 50px;
+        width: 200px;
+        background: $color_botones;
+        border-radius: 25px;
+        border: 0;
+        a {
+            color: #fff;
+            list-style: none;
+            text-decoration: none;
+            font-size: 2rem;
+        }
+    }
 }
