@@ -1,7 +1,8 @@
 .fondo {
     background-image: url(../imagenes/fondo.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position: top;
+    background-size: 100% auto;
     @media screen and (max-width: 767px) {
         background-image: url(../imagenes/fondo-mobile.svg);
     }
