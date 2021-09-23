@@ -11,13 +11,23 @@ header {
         justify-content: space-evenly;
         padding: 100px 0 0 0;
         .Header__Hero__Titulo{
+            display: flex;
+            flex-direction: row;
             font-size: 1.3em;
             font-weight: 500;
             font-style: normal;
-            line-height: 100;
-            color: $color_principal;
+            color: #4B949C;
             margin-right: 200px;
             margin-bottom: 150px;
+            img {
+                width: 87px;
+                height: 98px;
+                margin: 0 0 0 10px;
+                @media screen and (max-width: 768px) {
+                    width: 43px;
+                    height: 54px;
+                }
+            }
         }
         .Header__Hero__Imagen {
             animation-name: floating;
@@ -75,7 +85,7 @@ header {
                 h1 {
                     font-size: 5em;
                     text-align: center;
-                }            
+                }
             }
             .Header__Hero__Imagen {
                 width: 50%;
@@ -87,12 +97,12 @@ header {
         .Header__Hero__Siguiente {
             margin-top: -250px;
             p {
-                font-size: 4em;
-                padding: 0 0 50px 0;
+                font-size: 2em;
+                padding: 0 0 20px 0;
             }
             a {
                 img {
-                    width: 50px;
+                    width: 30px;
                 }
             }
         }

@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: space-around;
     .Sobre__Mi__1 {
-        width: 97vw;
+        width: 100%;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -15,8 +15,9 @@
             margin-bottom: 100px;
             .Sobre__Mi__1__Texto__Titulo{
                 h2 {
-                    color: #4B949C;                    ;
+                    color: #4B949C;
                     text-align: center;
+                    margin-bottom: 20px;
                 }
             }
             p {
@@ -25,6 +26,7 @@
                 font-size: 1.5em;
                 text-align: justify;
                 line-height: 2.5em;
+                margin: 0;
             }
         }
         .Sobre__Mi__1__Img {
@@ -35,7 +37,7 @@
         }
     }
     .Sobre__Mi__2 {
-        width: 98vw;
+        width: 100%;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -62,7 +64,6 @@
 
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
     .Sobre__Mi {
-        margin-top: 15%;
         .Sobre__Mi__1 {
             flex-direction: column;
             align-items: center;
@@ -85,8 +86,6 @@
 @media only screen and (min-width: 320px) and (max-width: 767px) {
     .Sobre__Mi {
         width: 100vw;
-        height: auto;
-        padding: 0;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -107,6 +106,7 @@
                     h2 {
                         text-align: center;
                         font-size: 2.5rem;
+                        margin: 0;
                     }
                 }
                 p {
@@ -121,7 +121,6 @@
         }
         .Sobre__Mi__2 {
             width: 100vw;
-            height: auto;
             display: flex;
             flex-direction: column;
             .Sobre__Mi__2__Img {

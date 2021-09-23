@@ -3,16 +3,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     .Servicios__Titulo {
         h3 {
             color: #4B949C;
             text-align: center;
-            font-size: 4rem;
+            font-size: 3.5rem;
             font-style: normal;
             font-weight: 700;
-            line-height: 3rem;
-            padding: 175px 0 0 0;
+            line-height: 7rem;
+            padding: 90px 0 0 0;
         }
     }
     .swiper {
@@ -38,8 +38,8 @@
                 flex-direction: row;
                 justify-content: space-around;
                 .Servicios__Bloque__Item {
-                    width: 80%;
-                    height: 400px;
+                    width: 390px;
+                    height: 410px;
                     background-color: #ffffff;
                     border-radius: 20px;
                     display: flex;
@@ -58,8 +58,10 @@
                     }
                     p {
                         color: #000000;
+                        font-size: 1.4rem;
+                        font-weight: 400;
                         text-align: center;
-                        margin: 25px;
+                        margin: 15px 30px 35px 30px;
                     }
                 }
             }
@@ -69,13 +71,12 @@
                 bottom: -4px;
             }
         }
-      }
-    
+    }
 }
-
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
     .Servicios {
-        height: 75vh;
+        height: 80vh;
+        justify-content: center;
         .Servicios__Bloque {
             margin: 5% 5% 0 5%;
         }
@@ -95,7 +96,7 @@
         .Servicios__Titulo {
             h3 {
                 text-align: center;
-                padding-bottom: 50px;
+                padding: 0;
                 font-size: 3.5rem;
             }
         }
