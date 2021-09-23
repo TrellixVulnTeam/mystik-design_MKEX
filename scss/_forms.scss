@@ -9,33 +9,32 @@
     .Formulario__Titulo{
         width: 200px;
         height: 57px;
-        background: $color_botones;
-        border-radius: 50px;
-        margin-top: 5rem;
-        text-align: right;
-        
-
-        h4 {
-            color: #ffffff;
-            text-align: center;
-            margin-top: 1.4rem;
+        text-align: center;
+        h2 {
+            font-family: 'Nunito', sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 3rem;
+            line-height: 4rem;
+            color: $color_footer;
+            display:inline-block;
+            @media screen and (max-width: 768px) {
+                font-size: 2.5rem;
+            }
+    
         }
     }
 
     .Formulario__Rellenar {
         width: 100%;
-        padding: 30px 80px 30px 80px;
+        padding: 0px 80px 30px 80px;
         align-items:center;
         @media screen and (max-width: 768px) {
-            padding: 10px 20px 10px 20px;
+            padding: 0px 20px 10px 20px;
         }
 
         .Formulario__Datos{
             text-align: right;
-            @media (max-width: 992px) { 
-                text-align: left;
-            }
-
             .Formulario__Input{
                 width: 80%;
                 height: 60px;
@@ -58,26 +57,28 @@
         text-align: left;
         
         .Formulario__Mensaje__Area{
-                width: 80%;
-                height: 220px;
-                border-radius: 11px;
-                border:none;
-                margin: 1rem;
-                resize: none;
-                font-size: 1.3rem;
-                padding-left: 2rem;
-                padding-top: 2rem;
-                outline: none;
-                @media screen and (max-width: 768px) {
-                    height: 120px;
-                    width: 100%;
-                }
+            width: 80%;
+            height: 220px;
+            border-radius: 11px;
+            border:none;
+            margin: 1rem;
+            resize: none;
+            font-size: 1.3rem;
+            padding-left: 2rem;
+            padding-top: 2rem;
+            outline: none;
+            @media screen and (max-width: 768px) {
+                height: 120px;
+                width: 100%;
+            }
         }
     }
 
     .Formulario__Btn{
         text-align: right;
-
+        @media (max-width: 680px) { 
+            text-align: center;
+        }
         .Formulario__EnviarBtn{
             width: 178px;
             height: 49px;

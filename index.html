@@ -203,60 +203,85 @@
     <section class="Proyectos" id="proyectos">
         <div class="Proyectos__Titulo row">
             <h2 class="col-6">Nuestros Clientes</h2>
-            <div class="col-sm-12 col-lg-6 row Proyectos__Switch">
+            <div class="col-xs-12 col-sm-6 col-lg-6 row Proyectos__Switch">
                 <button class="logofolioBtn" id="logofolioBtn">Logofolio</button>
                 <button class="redesBtn" id="redesBtn">Redes Sociales</button>
             </div>
         </div>
         <div class="Proyectos__Contenedor">
-            <div class="Proyectos__Bloque">
+            <div class="Proyectos__Bloque rusticopolis" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                 <img src="imagenes/logofolio/logo1.png"  alt="">
-                <button>Ver más ></button>
+                <button class="rusticopolis" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Ver más ></button>
             </div>
-            <div class="Proyectos__Bloque">
+            <div class="Proyectos__Bloque nirodha" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                 <img src="imagenes/logofolio/logo2.png" alt="">
-                <button>Ver más ></button>
+                <button class="nirodha" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Ver más ></button>
             </div>
-            <div class="Proyectos__Bloque">
+            <div class="Proyectos__Bloque renacer" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                 <img src="imagenes/logofolio/logo3.png" class="achicar"  alt="">
-                <button>Ver más ></button>
+                <button class="renacer" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Ver más ></button>
             </div>
-            <div class="Proyectos__Bloque">
+            <div class="Proyectos__Bloque credimoney" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                 <img src="imagenes/logofolio/logo4.png"  alt="">
-                <button>Ver más ></button>
+                <button class="credimoney" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Ver más ></button>
             </div>
-            <div class="Proyectos__Bloque">
+            <div class="Proyectos__Bloque xy" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                 <img src="imagenes/logofolio/logo5.webp" class="achicar" alt="">
-                <button>Ver más ></button>
+                <button class="xy" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Ver más ></button>
             </div>
-            <div class="Proyectos__Bloque">
+            <div class="Proyectos__Bloque bombadil" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                 <img src="imagenes/logofolio/logo6.webp"  alt="">
-                <button>Ver más ></button>
+                <button class="bombadil" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Ver más ></button>
             </div>
-            <div class="Proyectos__Bloque">
+            <div class="Proyectos__Bloque epoxy" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                 <img src="imagenes/logofolio/logo7.webp"  alt="">
-                <button>Ver más ></button>
+                <button class="epoxy" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Ver más ></button>
             </div>
-            <div class="Proyectos__Bloque">
+            <div class="Proyectos__Bloque click" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                 <img src="imagenes/logofolio/logo8.webp"  alt="">
-                <button>Ver más ></button>
+                <button class="click" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Ver más ></button>
             </div>
-            <div class="Proyectos__Bloque">
+            <div class="Proyectos__Bloque haini" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                 <img src="imagenes/logofolio/logo9.webp"  alt="">
-                <button>Ver más ></button>
+                <button class="haini" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Ver más ></button>
             </div>       
-            <div class="Proyectos__Bloque">
+            <div class="Proyectos__Bloque candys" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                 <img src="imagenes/logofolio/logo10.webp" class="achicar" alt="">
-                <button>Ver más ></button>
+                <button class="candys" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Ver más ></button>
             </div>                    
         </div>
     </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Slider Swiper -->
+                <div class="swiper mySwiperPopUp">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img class="img-fluid" id="popUpSlide1"></div>
+                      <div class="swiper-slide" id="popUpSlide2a"><img class="img-fluid" id="popUpSlide2"></div>
+                      <div class="swiper-slide" id="popUpSlide3a"><img class="img-fluid" id="popUpSlide3"></div>
+                    </div>
+                    <div class="swiper-button-next" id="buttonNext"></div>
+                    <div class="swiper-button-prev"></div>
+                  </div>
+                <!-- Slider Swiper End -->
+            </div>
+        </div>
+        </div>
+    </div>
+
 
     <!-- Formulario -->
 
     <section class="Formulario row">
         <div class="Formulario__Titulo col-lg-6 offset-lg-2" id="escribime">
-            <h4>¡Escribime!</h4>
+            <h2>¡Escribime!</h2>
         </div>
         <form id="userform" action="" method="POST" autocomplete="on" class="Formulario__Rellenar container row">
             <div class="Formulario__Datos col-12 col-lg-6">

@@ -510,16 +510,47 @@ header {
       line-height: 4rem;
       color: #64C3D1;
       display: inline-block; }
+      @media screen and (max-width: 320px) {
+        .Proyectos .Proyectos__Titulo h2 {
+          font-size: 2rem;
+          width: 100%;
+          padding-left: 6rem;
+          padding-right: 0; } }
+      @media screen and (min-width: 321px) and (max-width: 360px) {
+        .Proyectos .Proyectos__Titulo h2 {
+          font-size: 2rem;
+          width: 100%;
+          padding-left: 8rem;
+          padding-right: 0; } }
+      @media screen and (min-width: 361px) and (max-width: 680px) {
+        .Proyectos .Proyectos__Titulo h2 {
+          font-size: 3rem;
+          width: 100%;
+          padding-left: 5rem;
+          padding-right: 0; } }
+      @media screen and (min-width: 681px) and (max-width: 768px) {
+        .Proyectos .Proyectos__Titulo h2 {
+          font-size: 2.5rem;
+          width: 50%;
+          padding-left: 8rem;
+          padding-right: 0; } }
     .Proyectos .Proyectos__Titulo .Proyectos__Switch {
       padding-left: 25rem;
       display: flex;
       flex-wrap: nowrap; }
-      @media screen and (max-width: 1200px) {
+      @media screen and (max-width: 320px) {
+        .Proyectos .Proyectos__Titulo .Proyectos__Switch {
+          padding-left: 0px;
+          transform: translateX(-11px); } }
+      @media screen and (min-width: 321px) and (max-width: 413px) {
+        .Proyectos .Proyectos__Titulo .Proyectos__Switch {
+          padding-left: 2rem; } }
+      @media screen and (min-width: 414px) and (max-width: 768px) {
+        .Proyectos .Proyectos__Titulo .Proyectos__Switch {
+          padding-left: 4rem; } }
+      @media screen and (min-width: 769px) and (max-width: 1200px) {
         .Proyectos .Proyectos__Titulo .Proyectos__Switch {
           padding-left: 15rem; } }
-      @media screen and (max-width: 768px) {
-        .Proyectos .Proyectos__Titulo .Proyectos__Switch {
-          padding-left: 0; } }
       .Proyectos .Proyectos__Titulo .Proyectos__Switch button {
         width: 169px;
         height: 49px;
@@ -541,6 +572,9 @@ header {
         padding-left: 5rem;
         text-align: left;
         display: inline; }
+        @media screen and (max-width: 768px) {
+          .Proyectos .Proyectos__Titulo .Proyectos__Switch .logofolioBtn {
+            height: 37px; } }
       .Proyectos .Proyectos__Titulo .Proyectos__Switch .redesBtn {
         width: 229px;
         filter: grayscale(100%);
@@ -555,7 +589,8 @@ header {
         display: inline; }
         @media screen and (max-width: 768px) {
           .Proyectos .Proyectos__Titulo .Proyectos__Switch .redesBtn {
-            transform: translateX(-87px); } }
+            transform: translateX(-87px);
+            height: 37px; } }
   .Proyectos .Proyectos__Contenedor {
     margin: 30px 0 30px 0;
     text-align: center; }
@@ -569,7 +604,18 @@ header {
       text-align: center;
       position: relative;
       margin: 0.3rem;
-      position: relative; }
+      position: relative;
+      filter: grayscale(100%);
+      -webkit-filter: grayscale(100%); }
+      .Proyectos .Proyectos__Contenedor .Proyectos__Bloque:hover {
+        transition-property: filter;
+        -o-transition-property: filter;
+        transition-duration: 1s;
+        filter: none;
+        -webkit-filter: grayscale(0);
+        cursor: pointer; }
+        .Proyectos .Proyectos__Contenedor .Proyectos__Bloque:hover button {
+          opacity: 1.0; }
       @media screen and (max-width: 680px) {
         .Proyectos .Proyectos__Contenedor .Proyectos__Bloque {
           width: 120px;
@@ -584,22 +630,11 @@ header {
         transform: translateY(-50%);
         right: 0;
         text-align: center;
-        filter: grayscale(100%);
-        -webkit-filter: grayscale(100%);
         width: 70%;
         left: 15%; }
       .Proyectos .Proyectos__Contenedor .Proyectos__Bloque .achicar {
         width: 55%;
         left: 20%; }
-      .Proyectos .Proyectos__Contenedor .Proyectos__Bloque img:hover {
-        transition-property: filter;
-        -o-transition-property: filter;
-        transition-duration: 1s;
-        filter: none;
-        -webkit-filter: grayscale(0);
-        cursor: pointer; }
-      .Proyectos .Proyectos__Contenedor .Proyectos__Bloque img:hover + button {
-        opacity: 1.0; }
       .Proyectos .Proyectos__Contenedor .Proyectos__Bloque button {
         font-family: Nunito;
         font-style: normal;
@@ -639,26 +674,27 @@ header {
   .Formulario .Formulario__Titulo {
     width: 200px;
     height: 57px;
-    background: linear-gradient(180deg, #FDDDB4 0%, #F7C482 85.82%);
-    border-radius: 50px;
-    margin-top: 5rem;
-    text-align: right; }
-    .Formulario .Formulario__Titulo h4 {
-      color: #ffffff;
-      text-align: center;
-      margin-top: 1.4rem; }
+    text-align: center; }
+    .Formulario .Formulario__Titulo h2 {
+      font-family: 'Nunito', sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 3rem;
+      line-height: 4rem;
+      color: #64C3D1;
+      display: inline-block; }
+      @media screen and (max-width: 768px) {
+        .Formulario .Formulario__Titulo h2 {
+          font-size: 2.5rem; } }
   .Formulario .Formulario__Rellenar {
     width: 100%;
-    padding: 30px 80px 30px 80px;
+    padding: 0px 80px 30px 80px;
     align-items: center; }
     @media screen and (max-width: 768px) {
       .Formulario .Formulario__Rellenar {
-        padding: 10px 20px 10px 20px; } }
+        padding: 0px 20px 10px 20px; } }
     .Formulario .Formulario__Rellenar .Formulario__Datos {
       text-align: right; }
-      @media (max-width: 992px) {
-        .Formulario .Formulario__Rellenar .Formulario__Datos {
-          text-align: left; } }
       .Formulario .Formulario__Rellenar .Formulario__Datos .Formulario__Input {
         width: 80%;
         height: 60px;
@@ -691,6 +727,9 @@ header {
           width: 100%; } }
   .Formulario .Formulario__Btn {
     text-align: right; }
+    @media (max-width: 680px) {
+      .Formulario .Formulario__Btn {
+        text-align: center; } }
     .Formulario .Formulario__Btn .Formulario__EnviarBtn {
       width: 178px;
       height: 49px;
@@ -721,3 +760,28 @@ footer {
     padding: 0 10px; }
     footer .Footer__Redes a img {
       width: 30px; }
+
+.modal-content {
+  border: none; }
+  @media screen and (max-width: 320px) {
+    .modal-content {
+      width: 300px;
+      left: 2%; } }
+  @media screen and (min-width: 321px) and (max-width: 375px) {
+    .modal-content {
+      width: 300px;
+      left: 7%; } }
+  @media screen and (min-width: 376px) and (max-width: 680px) {
+    .modal-content {
+      width: 300px;
+      left: 12%; } }
+  .modal-content .modal-header {
+    border-bottom: none; }
+  .modal-content .modal-body {
+    padding: 0; }
+
+.swiper-button-prev {
+  color: #6EC5CE; }
+
+.swiper-button-next {
+  color: #6EC5CE; }
