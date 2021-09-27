@@ -2,7 +2,6 @@
 
 var swiper = new Swiper(".mySwiper", {
   slidesPerView:1,
-  spaceBetween: 10,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -10,11 +9,9 @@ var swiper = new Swiper(".mySwiper", {
   breakpoints: {
     640: {
       slidesPerView: 2,
-      spaceBetween: 10,
     },
     769: {
       slidesPerView: 3,
-      spaceBetween: 10,
     },
   },  
 });
@@ -23,15 +20,35 @@ var swiper = new Swiper(".mySwiper", {
 //Switch logofilio vs redes sociales
 
 $("#redesBtn").click(function() {
+    $(".Proyectos__Contenedor").hide();
+    $(".mySwiperRedes").fadeIn("slow");
     $("#redesBtn").css("filter", "none").css("z-index", "8").css("width", "169px");
     $("#logofolioBtn").css("filter", "grayscale(100%)").css("z-index", "7").css("width", "229px");
   });
 
   $("#logofolioBtn").click(function() {
+    $(".Proyectos__Contenedor").fadeIn("slow");
+    $(".mySwiperRedes").hide();
     $("#logofolioBtn").css("filter", "none").css("z-index", "8").css("width", "169px");
     $("#redesBtn").css("filter", "grayscale(100%)").css("z-index", "7").css("width", "229px");
   });
 
+//redes sociales slider
+  var swiper = new Swiper(".mySwiperRedes", {
+    slidesPerView: 1,
+    spaceBetween: 5,
+    freeMode: true,
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 15,
+      },
+      769: {
+        slidesPerView: 3,
+        spaceBetween: 15,
+      },
+    },  
+  });
 
 //Creación de la info del modal de la sección Proyectos, segun el proyecto
 
