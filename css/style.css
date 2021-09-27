@@ -725,74 +725,73 @@ header {
           .Proyectos .Proyectos__Contenedor .Proyectos__Bloque button {
             top: 78px; } }
 
-.swiper {
+.mySwiperRedes {
   width: 100%;
   height: 100%;
   display: none;
   overflow: none !important; }
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: transparent;
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-  filter: grayscale(100%);
-  -webkit-filter: grayscale(100%); }
-  .swiper-slide button {
-    width: 148px;
-    height: 35px;
-    background: linear-gradient(180deg, #9FEAF5 0%, #64C3D1 85.82%);
-    margin-top: 12px;
-    border-radius: 50px;
-    border: none;
-    color: #ffffff;
+  .mySwiperRedes .swiper-slide {
     text-align: center;
-    font-size: 1.5rem;
-    font-family: 'Nunito', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    line-height: 34px;
-    opacity: 0.0;
-    -webkit-transition: all 400ms ease-in-out;
-    -moz-transition: all 400ms ease-in-out;
-    -ms-transition: all 400ms ease-in-out;
-    -o-transition: all 400ms ease-in-out;
-    transition: all 400ms ease-in-out; }
-  .swiper-slide:hover {
-    transition-property: filter;
-    -o-transition-property: filter;
-    transition-duration: 1s;
-    filter: none;
-    -webkit-filter: grayscale(0);
-    cursor: pointer; }
-    .swiper-slide:hover button {
-      transition-property: opacity;
-      -o-transition-property: opacity;
-      transition: all 0.2s;
-      opacity: 1.0; }
-    .swiper-slide:hover img {
-      transform: scale(0.97);
-      transition: all 1s; }
-  .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; }
-    @media screen and (max-width: 768px) {
-      .swiper-slide img {
-        width: 335px; } }
+    font-size: 18px;
+    background: transparent;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%); }
+    .mySwiperRedes .swiper-slide button {
+      width: 148px;
+      height: 35px;
+      background: linear-gradient(180deg, #9FEAF5 0%, #64C3D1 85.82%);
+      margin-top: 12px;
+      border-radius: 50px;
+      border: none;
+      color: #ffffff;
+      text-align: center;
+      font-size: 1.5rem;
+      font-family: 'Nunito', sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      line-height: 34px;
+      opacity: 0.0;
+      -webkit-transition: all 400ms ease-in-out;
+      -moz-transition: all 400ms ease-in-out;
+      -ms-transition: all 400ms ease-in-out;
+      -o-transition: all 400ms ease-in-out;
+      transition: all 400ms ease-in-out; }
+    .mySwiperRedes .swiper-slide:hover {
+      transition-property: filter;
+      -o-transition-property: filter;
+      transition-duration: 1s;
+      filter: none;
+      -webkit-filter: grayscale(0);
+      cursor: pointer; }
+      .mySwiperRedes .swiper-slide:hover button {
+        transition-property: opacity;
+        -o-transition-property: opacity;
+        transition: all 0.2s;
+        opacity: 1.0; }
+      .mySwiperRedes .swiper-slide:hover img {
+        transform: scale(0.97);
+        transition: all 1s; }
+    .mySwiperRedes .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+      @media screen and (max-width: 768px) {
+        .mySwiperRedes .swiper-slide img {
+          width: 335px; } }
 
 .Formulario {
   margin: 0;
