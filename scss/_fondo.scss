@@ -1,10 +1,10 @@
 .fondo {
-    background-image: url(../imagenes/fondo.png);
+    background-image: url(../imagenes/desktop.jpg);
     background-repeat: no-repeat;
     background-position: top;
     background-size: 100% auto;
     @media screen and (max-width: 767px) {
-        background-image: url(../imagenes/fondo-mobile.svg);
+        background-image: url(../imagenes/mobile.jpg);
     }
 }
 
