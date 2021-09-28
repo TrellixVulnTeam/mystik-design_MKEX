@@ -18,12 +18,15 @@
             padding-left: 15px;
         }  
     }
-    button {
+    .Archivo__Descargar__Button {
         height: 50px;
         width: 200px;
         background: $color_botones;
         border-radius: 25px;
         border: 0;
+        :hover {
+            background: $color_botones_2;
+        }
         @media screen and (max-width: 768px) {
             height: 30px;
             width: 100px;
