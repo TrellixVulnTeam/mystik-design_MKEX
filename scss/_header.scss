@@ -22,7 +22,7 @@ header {
             img {
                 width: 87px;
                 height: 98px;
-                margin: 0 0 0 10px;
+                margin: 0 20px 0 10px;
                 @media screen and (max-width: 768px) {
                     width: 43px;
                     height: 54px;
@@ -42,14 +42,14 @@ header {
             100%   { transform: translate(0, -0px); }   
         }
             img {
-                width: 450px;
+                width: 500px;
             }
         }
     }
 }
 
 .Header__Hero__Siguiente {
-    margin-top: -100px;
+    margin-top: -150px;
     display: flex;
     flex-direction: column;
     align-items: center;

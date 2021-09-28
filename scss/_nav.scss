@@ -1,6 +1,6 @@
 /*Nav*/
 .Nav {
-    width: 90%;
+    width: 87%;
     background-color: #FFFFFF !important;
     box-shadow: 0px 2px 14px 0px #CACACA80;
     border-radius: 20px;
@@ -17,11 +17,11 @@
         .navbar-brand{
             width: 10rem;
             img{
-                width: 100%;
+                width: 110%;
             }
         }
-        padding: 1rem;
-        width: 80%;
+        padding: 0rem;
+        width: 87%;
         text-align: center;
         .Nav__Toggler {
             border: none;
@@ -51,9 +51,9 @@
                     a {
                         color: $color_texto !important;
                         text-decoration: none;
-                        font-size: 1.3rem;
+                        font-size: 1.5rem;
                         line-height: 1.7rem;
-                        font-weight: 600;
+                        font-weight: 300;
                         margin: 2rem;
                         padding: 0.5em 1em;
                         border-radius: 5px;
